@@ -1,7 +1,9 @@
+import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
+
 export const App = () => {
   return (
     <>
-      react
+      <PrimaryButton>test</PrimaryButton>
     </>
   );
 }

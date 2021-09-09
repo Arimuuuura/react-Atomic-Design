@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { SearchInput } from "./components/molecules/SearchInput";
+import { UserCard } from "./components/organisms/user/UserCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const user = {
+  name: 'arimura',
+  image: 'https://source.unsplash.com/7AIDE8PrvA0',
+  email: 'abc@abc.com',
+  tell: '080-1234-1234',
+  company: {
+    name: 'aaa株式会社',
+  },
+  website: 'https://google.com',
 }
 
-export default App;
+export const App = () => {
+  return (
+    <>
+      <SearchInput />
+      <UserCard user={user} />
+    </>
+  );
+}

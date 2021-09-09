@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
-import { HeaderOnly } from "./components/templates/HeaderOnly";
+import { DefaultLayout } from "./components/templates/DefaultLayout";
 
 const user = {
   name: 'arimura',
@@ -17,10 +17,10 @@ const user = {
 export const App = () => {
   return (
     <BrowserRouter>
-      <HeaderOnly>
+      <DefaultLayout>
         <SearchInput />
         <UserCard user={user} />
-      </HeaderOnly>
+      </DefaultLayout>
     </BrowserRouter>
   );
 }

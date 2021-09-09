@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Card } from '../../atoms/card/Card';
+import { UserIconWithName } from '../../molecules/user/UserIconWithName';
 
 const SDl = styled.dl`
   text-align: left;
@@ -10,6 +11,7 @@ const SDl = styled.dl`
   dd {
     padding-left: 32px;
     padding-bottom: 8px;
+    overflow-wrap: break-word;
   }
 `
 
@@ -19,8 +21,7 @@ export const UserCard = (props) => {
 
   return (
     <Card>
-      <img height={160} width={160} src={user.image} alt={user.name} />
-      <p>{user.name}</p>
+      <UserIconWithName image={user.image} name={user.name} />
       <SDl>
         <dt>mail</dt>
         <dd>{user.email}</dd>

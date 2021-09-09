@@ -1,4 +1,5 @@
 import React from 'react'
+import { Header } from '../atoms/layout/Header';
 
 export const HeaderOnly = (props) => {
 
@@ -6,8 +7,9 @@ export const HeaderOnly = (props) => {
 
   return (
     <>
-      <div style={{ height: "50px", backgroundColor: "red"}}>
-      </div>
+      {/* <div style={{ height: "50px", backgroundColor: "red"}}>
+      </div> */}
+      <Header />
       { children }
     </>
   )

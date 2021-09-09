@@ -7,8 +7,6 @@ export const HeaderOnly = (props) => {
 
   return (
     <>
-      {/* <div style={{ height: "50px", backgroundColor: "red"}}>
-      </div> */}
       <Header />
       { children }
     </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Card } from '../../atoms/card/Card';
 
 const SDl = styled.dl`
   text-align: left;
@@ -17,9 +18,9 @@ export const UserCard = (props) => {
   const { user } = props;
 
   return (
-    <div>
+    <Card>
       <img height={160} width={160} src={user.image} alt={user.name} />
-      <p>名前</p>
+      <p>{user.name}</p>
       <SDl>
         <dt>mail</dt>
         <dd>{user.email}</dd>
@@ -30,6 +31,6 @@ export const UserCard = (props) => {
         <dt>website</dt>
         <dd>{user.website}</dd>
       </SDl>
-    </div>
+    </Card>
   )
 }

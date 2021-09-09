@@ -1,22 +1,7 @@
-import { SearchInput } from "./components/molecules/SearchInput";
-import { UserCard } from "./components/organisms/user/UserCard";
-
-const user = {
-  name: 'arimura',
-  image: 'https://source.unsplash.com/7AIDE8PrvA0',
-  email: 'abc@abc.com',
-  tell: '080-1234-1234',
-  company: {
-    name: 'aaa株式会社',
-  },
-  website: 'https://google.com',
-}
+import { Router } from "./router/Router";
 
 export const App = () => {
   return (
-    <>
-      <SearchInput />
-      <UserCard user={user} />
-    </>
+    <Router />
   );
 }

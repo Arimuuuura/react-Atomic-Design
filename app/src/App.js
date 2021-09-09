@@ -1,7 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
-import { SearchInput } from "./components/molecules/SearchInput";
-import { UserCard } from "./components/organisms/user/UserCard";
-import { DefaultLayout } from "./components/templates/DefaultLayout";
+import { Router } from "./router/Router";
 
 const user = {
   name: 'arimura',
@@ -16,11 +13,6 @@ const user = {
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <SearchInput />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
+    <Router />
   );
 }

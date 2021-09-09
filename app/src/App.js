@@ -1,5 +1,6 @@
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
+import { HeaderOnly } from "./components/templates/HeaderOnly";
 
 const user = {
   name: 'arimura',
@@ -14,9 +15,9 @@ const user = {
 
 export const App = () => {
   return (
-    <>
+    <HeaderOnly>
       <SearchInput />
       <UserCard user={user} />
-    </>
+    </HeaderOnly>
   );
 }

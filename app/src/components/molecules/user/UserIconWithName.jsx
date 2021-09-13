@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components';
+import { UserContext } from '../../../providers/UserProvider';
 
 const SContainer = styled.div`
   text-align: center;
@@ -25,6 +26,8 @@ const SEdit = styled.span`
 export const UserIconWithName = (props) => {
 
   const { image, name, isAdmin} = props;
+  const context = useContext(UserContext);
+  console.log(context);
 
   return (
     <SContainer>

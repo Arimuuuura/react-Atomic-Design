@@ -16,7 +16,7 @@ const SDl = styled.dl`
 `
 
 export const UserCard = memo((props) => {
-  console.log('UserCard');
+  // console.log('UserCard');
 
   const { user } = props;
 

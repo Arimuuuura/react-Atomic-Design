@@ -24,6 +24,7 @@ const SEdit = styled.span`
 `
 
 export const UserIconWithName = (props) => {
+  console.log('UserIconWithName');
 
   const { image, name } = props;
   const { userInfo } = useContext(UserContext);

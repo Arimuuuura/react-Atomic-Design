@@ -16,6 +16,7 @@ const SDl = styled.dl`
 `
 
 export const UserCard = (props) => {
+  console.log('UserCard');
 
   const { user } = props;
 

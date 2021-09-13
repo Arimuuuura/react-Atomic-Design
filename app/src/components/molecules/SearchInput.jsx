@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components';
 import { PrimaryButton } from '../atoms/button/PrimaryButton'
 import { Input } from '../atoms/input/Input'
@@ -12,7 +12,7 @@ const SButtonWrapper = styled.div`
   padding-left: 8px;
 `
 
-export const SearchInput = () => {
+export const SearchInput = memo(() => {
   console.log('SearchInput');
   return (
     <SContainer>
@@ -22,4 +22,4 @@ export const SearchInput = () => {
       </SButtonWrapper>
     </SContainer>
   )
-}
+});

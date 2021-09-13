@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { memo, useContext } from 'react'
 import styled from 'styled-components';
 import { UserContext } from '../../../providers/UserProvider';
 
@@ -23,7 +23,7 @@ const SEdit = styled.span`
   cursor: pointer;
 `
 
-export const UserIconWithName = (props) => {
+export const UserIconWithName = memo((props) => {
   console.log('UserIconWithName');
 
   const { image, name } = props;
@@ -39,4 +39,4 @@ export const UserIconWithName = (props) => {
       }
     </SContainer>
   )
-}
+});
